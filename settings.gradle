@@ -1,2 +1,2 @@
 include ':facebookSDK'
-include ':kuggle'
+include ':Testing'

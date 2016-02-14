@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:color="@color/grey_overlay"/>
+    <solid android:color="@color/grey_overlay" />
+</shape><!-- From: file:/Users/scs/Work/Kuggle/Testing/src/main/res/drawable/seek_view.xml -->
