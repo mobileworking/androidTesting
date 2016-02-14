@@ -1,0 +1,318 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.Example.Activity.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menu_background" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/imageView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/title_logo" />
+
+            <Button
+                android:id="@+id/button_nav_close"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/empty"
+                android:gravity="right|center_vertical"
+                android:minHeight="5dip"
+                android:minWidth="10dip"
+                android:text="@string/str_close"
+                android:textColor="@color/white"
+                android:textSize="@dimen/str_button"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_country_code"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" >
+
+            <Button
+                android:id="@+id/button_nav_back"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/empty"
+                android:minHeight="30dip"
+                android:minWidth="30dip" />
+
+            <Button
+                android:id="@+id/button_share_facebook"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button_nav_back"
+                android:layout_toLeftOf="@+id/button_nav_back"
+                android:background="@drawable/icon_facebook"
+                android:minHeight="30dip"
+                android:minWidth="30dip" />
+
+            <Button
+                android:id="@+id/button_share_twitter"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button_nav_back"
+                android:layout_toRightOf="@+id/button_nav_back"
+                android:background="@drawable/icon_twitter"
+                android:minHeight="30dip"
+                android:minWidth="30dip" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/button_nav_back"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:text="@string/str_share_kuggle"
+                android:textColor="@color/grey_overlay"
+                android:textSize="@dimen/str_text" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_spend"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout_country_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_login_phone"
+            android:minWidth="200dp"
+            android:paddingRight="35dip"
+            android:text="50,000"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/str_button"
+            android:textStyle="bold" />
+        
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView_country_code"
+            android:layout_alignTop="@+id/button_spend"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/koins" />
+
+        <TextView
+            android:id="@+id/textView_country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/str_spend_my"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/str_text" />
+
+        <ScrollView
+            android:id="@+id/scrollView_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_country_code"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_menu_purpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_menu" >
+
+                    <Button
+                        android:id="@+id/Button04"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/empty"
+                        android:minHeight="30dip"
+                        android:minWidth="30dip" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="34dp"
+                        android:layout_toLeftOf="@+id/Button04"
+                        android:src="@drawable/icon_my_purpose" />
+
+                    <TextView
+                        android:id="@+id/textView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imageView2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="47dp"
+                        android:text="@string/str_my_purpose"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white_overlay"
+                        android:textSize="@dimen/str_menu" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_menu_purchases"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_menu" >
+
+                    <Button
+                        android:id="@+id/Button05"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/empty"
+                        android:minHeight="30dip"
+                        android:minWidth="30dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="34dp"
+                        android:layout_toLeftOf="@+id/Button05"
+                        android:src="@drawable/icon_purchases" />
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/ImageView01"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="47dp"
+                        android:text="@string/str_purchases"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white_overlay"
+                        android:textSize="@dimen/str_menu" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_menu_find_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_menu" >
+
+                    <Button
+                        android:id="@+id/Button06"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/empty"
+                        android:minHeight="30dip"
+                        android:minWidth="30dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="34dp"
+                        android:layout_toLeftOf="@+id/Button06"
+                        android:src="@drawable/icon_find_place" />
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/ImageView02"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="47dp"
+                        android:text="@string/str_find_place"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white_overlay"
+                        android:textSize="@dimen/str_menu" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_menu_preferences"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_menu" >
+
+                    <Button
+                        android:id="@+id/Button07"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/empty"
+                        android:minHeight="30dip"
+                        android:minWidth="30dip" />
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="34dp"
+                        android:layout_toLeftOf="@+id/Button07"
+                        android:src="@drawable/icon_preferences" />
+
+                    <TextView
+                        android:id="@+id/TextView06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/ImageView03"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="47dp"
+                        android:text="@string/str_preferences"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/white_overlay"
+                        android:textSize="@dimen/str_menu" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

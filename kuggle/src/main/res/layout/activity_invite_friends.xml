@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.Example.Activity.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/roundrect_background_invite" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/imageView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/title_logo" />
+
+            <Button
+                android:id="@+id/button_nav_menu"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/empty"
+                android:gravity="center_vertical"
+                android:minHeight="5dip"
+                android:minWidth="10dip"
+                android:text="@string/str_menu"
+                android:textColor="@color/white"
+                android:textSize="@dimen/str_button"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_nav_watch_ad"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/empty"
+                android:gravity="right|center_vertical"
+                android:minHeight="5dip"
+                android:minWidth="10dip"
+                android:text="@string/str_watch_ad"
+                android:textColor="@color/white"
+                android:textSize="@dimen/str_button"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_country_code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/fuchsia" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/str_hi"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/str_text" />
+
+        <TextView
+            android:id="@+id/textView_select_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_hello"
+            android:layout_centerHorizontal="true"
+            android:text="@string/str_thanks_for"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/str_text" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_select_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="@string/str_will_launch"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/str_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView02"
+            android:layout_centerHorizontal="true"
+            android:text="@string/str_reach_our"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/str_text"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_invite_friends"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_login_phone"
+            android:minWidth="45dp"
+            android:text="@string/str_invite_friends"
+            android:textColor="@color/fuchsia"
+            android:textSize="@dimen/str_button"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_user_state_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextView04"
+            android:layout_below="@+id/TextView03"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_big" />
+        
+        <ImageView
+            android:id="@+id/imageView_user_state_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextView04"
+            android:layout_below="@+id/TextView03"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_middle" />
+        
+        <ImageView
+            android:id="@+id/imageView_user_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextView04"
+            android:layout_below="@+id/TextView03"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/progress_logo" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextView01"
+            android:layout_centerHorizontal="true"
+            android:text="@string/str_help_us_launch"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/str_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_invite_friends"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/str_invite_special_gift"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/str_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_profile_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView_user_state"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:text="--"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
